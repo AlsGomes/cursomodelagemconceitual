@@ -12,7 +12,7 @@ import javax.persistence.OneToOne;
 
 import com.als.curso.domain.enums.EstadoPagamento;
 
-@Entity
+@Entity(name = "tbl_pagamento")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Pagamento implements Serializable {
 	private static final long serialVersionUID = 1L;

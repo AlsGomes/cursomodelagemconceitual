@@ -4,10 +4,10 @@ import javax.persistence.Entity;
 
 import com.als.curso.domain.enums.EstadoPagamento;
 
-@Entity
+@Entity(name = "tbl_pagamento_com_cartao")
 public class PagamentoComCartao extends Pagamento {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer numeroDeParcelas;
 
 	public PagamentoComCartao() {
